@@ -53,7 +53,7 @@ const CardServices = ({ service, height }) => {
               flexDirection: 'column'
             }}
           >
-            <h3 style={{ color: colorPrimario, fontSize: '2.5rem' }}>
+            <h3 style={{ color: colorPrimario, fontSize: '2rem' }}>
               {service.name}
             </h3>
             <div>{parrafosRenderizados}</div>
@@ -74,7 +74,7 @@ const CardServices = ({ service, height }) => {
         <CardServicesOne
           style={{ transition: 'height 0.3s ease', overflow: 'hidden' }}
         >
-          <h3 style={{ color: colorPrimario, fontSize: '2.5rem' }}>
+          <h3 style={{ color: colorPrimario, fontSize: '2rem' }}>
             {service.name}
           </h3>
           <div

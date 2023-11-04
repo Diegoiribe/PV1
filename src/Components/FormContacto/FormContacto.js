@@ -57,7 +57,7 @@ const FormContacto = (props) => {
     <>
       <FormContactoDiv onSubmit={handleSubmitForm}>
         <TextContactoDiv>
-          <h3 style={{ color: colorFuerte }}>
+          <h3 style={{ color: colorFuerte, fontSize: '2rem' }}>
             Agenda tu Servicio Con Nosotros
           </h3>
           <p style={{ color: colorPrimario, fontSize: '1vw' }}>
@@ -67,9 +67,9 @@ const FormContacto = (props) => {
 
         <CampoContactoDiv>
           <div>
-            <h6 style={{ color: colorFuerte, margin: '.5rem 0' }}>
+            <h4 style={{ color: colorFuerte, margin: '.5rem 0' }}>
               Informacion de Contacto
-            </h6>
+            </h4>
           </div>
           <CampoContactoDiv>
             <CampoContacto
@@ -93,7 +93,7 @@ const FormContacto = (props) => {
           </CampoContactoDiv>
         </CampoContactoDiv>
         <div style={{ width: '100%' }}>
-          <h6 style={{ color: colorFuerte, margin: '.5rem 0' }}>Mensaje</h6>
+          <h4 style={{ color: colorFuerte, margin: '.5rem 0' }}>Mensaje</h4>
           <TextAreaContacto
             titulo=""
             placeholder="Ingresa un mensaje"
