@@ -34,7 +34,7 @@ const CardContactoDivTwo = styled.div`
 
 const CardContactoDivThree = styled.div`
   width: 50%;
-  height: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

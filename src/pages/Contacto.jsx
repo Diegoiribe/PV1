@@ -36,7 +36,7 @@ const Contacto = ({
     <>
       <Instalaciones cardInstalaciones={cardInstalaciones} />
       <ContactoEtiqueta>
-        <h2 style={{ color: 'white' }}>Contacto</h2>
+        <h2 style={{ color: 'white', fontSize: '3rem' }}>Contacto</h2>
       </ContactoEtiqueta>
       <ContactoDiv>
         <FormContacto registrarMensajeContacto={registrarMensajeContacto} />
