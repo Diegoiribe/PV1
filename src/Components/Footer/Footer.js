@@ -41,7 +41,7 @@ const Footer = () => {
     <FooterDiv>
       <FooterDivOne>
         <div>
-          <h2 style={{ color: colorSecundario }}>Dr. Lopez Lugo</h2>
+          <h1 style={{ color: colorSecundario }}>Dr. Lopez Lugo</h1>
         </div>
         <div>
           <FooterP>Inicio</FooterP>

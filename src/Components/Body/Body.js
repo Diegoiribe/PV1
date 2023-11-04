@@ -81,7 +81,9 @@ const Body = () => {
       <BodyCardTwo></BodyCardTwo> */}
       {/* <BodyCardThree></BodyCardThree> */}
       <BodyCardFour>
-        <h1 style={{ fontSize: '3rem', color: colorSecundario, width: '43%' }}>
+        <h1
+          style={{ fontSize: '3.5rem', color: colorSecundario, width: '43%' }}
+        >
           Dr. Omar Lopez Lugo
         </h1>
         <Link to="/Cita">

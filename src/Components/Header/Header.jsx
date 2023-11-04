@@ -29,16 +29,16 @@ const HeaderDivTwo = styled.div`
   min-width: 40%;
   background: ${fondoPrimario};
   border-radius: 4.375rem;
-  padding: 0.15rem;
+  padding: 0.3rem;
 `
 const HeaderP = styled.p`
   font-weight: bolder;
   font-family: 'Epidemic', sans-serif;
   background: ${fondoPrimario};
-  padding: 0.5rem 0.75rem;
+  padding: 0.8rem 1%.5;
   color: ${colorPrimario};
   border-radius: 5px;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   cursor: pointer;
   &:hover {
     color: #666;
@@ -48,7 +48,7 @@ const HeaderP = styled.p`
 const HeaderH1 = styled.h1`
   color: ${colorPrimario};
   font-family: 'Epidemic', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
 `
 
 const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {

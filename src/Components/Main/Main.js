@@ -59,7 +59,7 @@ const Main = () => {
       <MainDivOne>
         <h2
           style={{
-            maxWidth: '289px',
+            maxWidth: '30%',
             textAlign: 'center',
             color: colorSecundario,
             fontSize: '2.5vw'
