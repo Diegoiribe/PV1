@@ -35,7 +35,7 @@ const HeaderP = styled.p`
   font-weight: bolder;
   font-family: 'Epidemic', sans-serif;
   background: ${fondoPrimario};
-  padding: 0.8rem 1%.5;
+  padding: 0.8rem 1.5rem;
   color: ${colorPrimario};
   border-radius: 5px;
   font-size: 1.15rem;
