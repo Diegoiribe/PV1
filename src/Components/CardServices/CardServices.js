@@ -74,7 +74,9 @@ const CardServices = ({ service, height }) => {
         <CardServicesOne
           style={{ transition: 'height 0.3s ease', overflow: 'hidden' }}
         >
-          <h3 style={{ color: colorPrimario }}>{service.name}</h3>
+          <h3 style={{ color: colorPrimario, fontSize: '2.5rem' }}>
+            {service.name}
+          </h3>
           <div
             style={{
               width: '3.5vw',
