@@ -36,7 +36,7 @@ const Instalaciones = ({ cardInstalaciones }) => {
   return (
     <InstalacionesDiv>
       <TextDiv>
-        <h2 style={{ color: colorFuerte }}>Instalaciones</h2>
+        <h2 style={{ color: colorFuerte, fontSize: '2rem' }}>Instalaciones</h2>
         <p style={{ color: colorFuerte, fontSize: '1.25vw' }}>
           Montecarlo, Parque Canacintra I, 80054 Culiacán Rosales, Sin.
         </p>

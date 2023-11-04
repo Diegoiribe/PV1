@@ -72,7 +72,9 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
           padding: '2.5vh 0'
         }}
       >
-        <h3 style={{ color: colorSecundario }}>Agenda con nosotros</h3>
+        <h3 style={{ color: colorSecundario, fontSize: '2rem' }}>
+          Agenda con nosotros
+        </h3>
         <p style={{ color: colorSecundario, fontSize: '1vw' }}>
           Tenemos a tu disposicion
         </p>
@@ -86,7 +88,9 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
             />
           </IconDiv>
           <CardContactoDivThree>
-            <h4 style={{ color: colorSecundario }}>Visitanos</h4>
+            <h4 style={{ color: colorSecundario, fontSize: '2rem' }}>
+              Visitanos
+            </h4>
             <p style={{ color: colorSecundario, fontSize: '1vw' }}>
               Montecarlo, Parque Canacintra I, 80054 Culiacán Rosales, Sin
             </p>
@@ -100,7 +104,9 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
             />
           </IconDiv>
           <CardContactoDivThree>
-            <h4 style={{ color: colorSecundario }}>Escribenos</h4>
+            <h4 style={{ color: colorSecundario, fontSize: '2rem' }}>
+              Escribenos
+            </h4>
             <p style={{ color: colorSecundario, fontSize: '1vw' }}>
               Doctor@ejemplo.com
             </p>
@@ -114,7 +120,9 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
             />
           </IconDiv>
           <CardContactoDivThree>
-            <h4 style={{ color: colorSecundario }}>Llamanos</h4>
+            <h4 style={{ color: colorSecundario, fontSize: '2rem' }}>
+              Llamanos
+            </h4>
             <p style={{ color: colorSecundario, fontSize: '1vw' }}>
               (+52) xxx-xxxx-xx
             </p>

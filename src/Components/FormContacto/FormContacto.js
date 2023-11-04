@@ -67,9 +67,9 @@ const FormContacto = (props) => {
 
         <CampoContactoDiv>
           <div>
-            <h4 style={{ color: colorFuerte, margin: '.5rem 0' }}>
+            <h3 style={{ color: colorFuerte, margin: '.5rem 0' }}>
               Informacion de Contacto
-            </h4>
+            </h3>
           </div>
           <CampoContactoDiv>
             <CampoContacto
@@ -93,7 +93,7 @@ const FormContacto = (props) => {
           </CampoContactoDiv>
         </CampoContactoDiv>
         <div style={{ width: '100%' }}>
-          <h4 style={{ color: colorFuerte, margin: '.5rem 0' }}>Mensaje</h4>
+          <h3 style={{ color: colorFuerte, margin: '.5rem 0' }}>Mensaje</h3>
           <TextAreaContacto
             titulo=""
             placeholder="Ingresa un mensaje"
