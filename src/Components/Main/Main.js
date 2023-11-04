@@ -61,7 +61,8 @@ const Main = () => {
           style={{
             maxWidth: '289px',
             textAlign: 'center',
-            color: colorSecundario
+            color: colorSecundario,
+            fontSize: '2.5vw'
           }}
         >
           Transformando belleza y restaurando confianza, con orgullo

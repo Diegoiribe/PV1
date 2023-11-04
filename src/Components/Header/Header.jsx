@@ -38,7 +38,7 @@ const HeaderP = styled.p`
   padding: 0.5rem 0.75rem;
   color: ${colorPrimario};
   border-radius: 5px;
-  font-size: 0.65rem;
+  font-size: 1.25rem;
   cursor: pointer;
   &:hover {
     color: #666;
@@ -48,7 +48,7 @@ const HeaderP = styled.p`
 const HeaderH1 = styled.h1`
   color: ${colorPrimario};
   font-family: 'Epidemic', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 `
 
 const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {
