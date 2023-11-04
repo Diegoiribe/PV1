@@ -53,7 +53,9 @@ const CardServices = ({ service, height }) => {
               flexDirection: 'column'
             }}
           >
-            <h3 style={{ color: colorPrimario }}>{service.name}</h3>
+            <h3 style={{ color: colorPrimario, fontSize: '2.5rem' }}>
+              {service.name}
+            </h3>
             <div>{parrafosRenderizados}</div>
           </div>
           <div

@@ -16,7 +16,9 @@ const BAndA = () => {
   return (
     <div>
       <BAndADiv>
-        <h2 style={{ color: colorSecundario }}>Before and After</h2>
+        <h2 style={{ color: colorSecundario, fontSize: '3rem' }}>
+          Before and After
+        </h2>
       </BAndADiv>
     </div>
   )
