@@ -35,7 +35,7 @@ const CitaDoctorCard = ({ citaservice }) => {
           textDecoration: 'none'
         }}
       >
-        <h3 style={{ color: colorSecundario }}>{citaservice.name}</h3>
+        <h1 style={{ color: colorSecundario }}>{citaservice.name}</h1>
       </div>
     </CitaDoctorDiv>
   )

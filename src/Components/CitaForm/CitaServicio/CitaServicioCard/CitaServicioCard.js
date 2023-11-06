@@ -34,7 +34,7 @@ const CitaServicioCard = ({ citaservice }) => {
         }}
         to={`/Cita/${citaservice.name}`}
       >
-        <h3 style={{ color: colorPrimario }}>{citaservice.name}</h3>
+        <h1 style={{ color: colorPrimario }}>{citaservice.name}</h1>
         <ArrowForwardIosIcon
           fontSize="small"
           style={{ color: colorPrimario }}

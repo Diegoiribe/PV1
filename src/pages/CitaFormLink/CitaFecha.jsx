@@ -57,7 +57,11 @@ const CitaFechaLink = ({ hora, horaSeleccionada }) => {
             >
               <DemoItem style={{ marginTop: '0' }} label="">
                 <DateCalendar
-                  style={{ color: colorPrimario, height: '290px' }}
+                  style={{
+                    color: colorPrimario,
+                    height: '70vh',
+                    fontSize: '.5vw'
+                  }}
                   valor={time}
                   onChange={(newValue) => setTime(newValue)}
                 />
@@ -91,7 +95,7 @@ const CitaFechaLink = ({ hora, horaSeleccionada }) => {
                 alignItems: 'center'
               }}
             >
-              <h4 style={{ color: colorPrimario }}>Elige una hora</h4>
+              <h1 style={{ color: colorPrimario }}>Elige una hora</h1>
             </div>
             <div
               style={{

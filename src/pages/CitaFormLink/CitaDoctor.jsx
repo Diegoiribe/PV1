@@ -35,9 +35,9 @@ const CitaDoctorLink = ({ citaDoctor, citaservice }) => {
       }}
     >
       <CitaDoctorLinkDiv>
-        <h3 style={{ margin: '0 10%', color: colorPrimario }}>
+        <h1 style={{ margin: '0 10%', color: colorPrimario }}>
           Escoger Doctor
-        </h3>
+        </h1>
         <div style={{ width: '100%' }}>
           {citaServiceItem && (
             <CitaDoctorCard
