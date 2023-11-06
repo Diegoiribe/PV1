@@ -55,6 +55,9 @@ const BodyCardFour = styled.div`
   flex-direction: column;
   align-items: left;
   padding: 20vh 15vw;
+  @media (max-width: 980px) {
+    background-position: center right 35%;
+  }
 `
 const BodyCardFive = styled.div`
   grid-column: 4/5;
