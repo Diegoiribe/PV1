@@ -53,7 +53,7 @@ const CardHeader = styled.div`
   align-items: center;
   cursor: pointer;
 
-  h5 {
+  h2 {
     color: ${colorPrimario};
   }
 `
@@ -69,7 +69,7 @@ const SubCardHeader = styled.div`
   align-items: center;
   cursor: pointer;
 
-  h6 {
+  h3 {
     color: ${colorSecundario};
   }
 `
