@@ -119,7 +119,7 @@ const BotonLogin = (props) => {
 
 const BotonBodyDiv = styled.button`
   font-weight: bolder;
-  width: 43%;
+  width: 55%;
   padding: 1vw;
   margin: 1vw 0.5%;
   background: ${colorFuerte};
