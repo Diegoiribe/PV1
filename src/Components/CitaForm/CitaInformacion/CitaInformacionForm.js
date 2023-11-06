@@ -8,7 +8,7 @@ import { useLocation } from 'react-router-dom'
 
 const CitaInformacionFormLabel = styled.label`
   margin: 5% 1%;
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   color: ${colorPrimario};
 `
 
