@@ -22,6 +22,9 @@ const HeaderContainer = styled.div`
   flex-direction: ${(props) => (props.expanded ? 'column' : 'row')};
   border-bottom: 1px solid ${fondoPrimario};
   z-index: 1;
+  @media (max-width: 1024px) {
+    height: ${(props) => (props.expanded ? '50vh' : '12vh')};
+  }
 `
 const HeaderDivTwo = styled.div`
   display: flex;
@@ -31,6 +34,11 @@ const HeaderDivTwo = styled.div`
   background: ${fondoPrimario};
   border-radius: 4.375rem;
   padding: 0.3rem;
+
+  @media (max-width: 1024px) {
+    min-width: 35%;
+    padding: 0.2rem;
+  }
 
   @media (max-width: 980px) {
     background: none;
@@ -48,6 +56,10 @@ const HeaderP = styled.p`
   cursor: pointer;
   &:hover {
     color: #666;
+  }
+  @media (max-width: 1024px) {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.9rem;
   }
 `
 
@@ -97,7 +109,7 @@ const HeaderH1 = styled.h1`
   color: ${colorPrimario};
   font-family: 'Epidemic', sans-serif;
   font-size: 3rem;
-  @media (max-width: 980px) {
+  @media (max-width: 1240px) {
     font-size: 2rem;
   }
 `

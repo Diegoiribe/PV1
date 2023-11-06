@@ -78,7 +78,7 @@ const Body = () => {
   const styles = {
     fontSize: '3.5rem',
     color: colorSecundario,
-    width: '55%'
+    width: '65%'
   }
 
   // Aplicar estilos condicionales en función del ancho de la pantalla
