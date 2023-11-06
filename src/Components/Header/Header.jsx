@@ -8,6 +8,7 @@ import {
   colorSecundario,
   fondoPrimario
 } from '../UI/Variables'
+import { useState } from 'react'
 
 const HeaderContainer = styled.div`
   padding: 0 10%;
@@ -17,8 +18,8 @@ const HeaderContainer = styled.div`
   align-items: center;
   background: ${colorSecundario};
   width: 100%;
-  height: 10vh;
-  flex-direction: row;
+  height: ${(props) => (props.expanded ? '50vh' : '10vh')};
+  flex-direction: ${(props) => (props.expanded ? 'column' : 'row')};
   border-bottom: 1px solid ${fondoPrimario};
   z-index: 1;
 `
@@ -30,11 +31,16 @@ const HeaderDivTwo = styled.div`
   background: ${fondoPrimario};
   border-radius: 4.375rem;
   padding: 0.3rem;
+
+  @media (max-width: 1024px) {
+    background: none;
+    display: ${(props) => (props.expanded ? 'flex' : 'none')};
+  }
 `
 const HeaderP = styled.p`
   font-weight: bolder;
   font-family: 'Epidemic', sans-serif;
-  background: ${fondoPrimario};
+
   padding: 0.8rem 1.5rem;
   color: ${colorPrimario};
   border-radius: 5px;
@@ -45,6 +51,48 @@ const HeaderP = styled.p`
   }
 `
 
+const HeaderTreeDiv = styled.div`
+  @media (max-width: 1024px) {
+    display: ${(props) => (props.expanded ? 'flex' : 'none')};
+  }
+`
+
+const Toggle = styled.div`
+  display: none;
+  position: relative;
+  width: 32px;
+  height: 40px;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: ${colorPrimario};
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 ${colorPrimario};
+    transition: 0.25s;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: ${colorPrimario};
+    transform: translateY(10px);
+    transition: 0.25s;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+`
+
 const HeaderH1 = styled.h1`
   color: ${colorPrimario};
   font-family: 'Epidemic', sans-serif;
@@ -52,6 +100,12 @@ const HeaderH1 = styled.h1`
 `
 
 const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {
+  const [expanded, setExpanded] = useState(false)
+  const toggleHeight = () => {
+    setExpanded(!expanded)
+    console.log(expanded)
+  }
+
   const cambiarSeccion = (nombre) => {
     setSeccionActiva(nombre)
     setSeccion((prevSeccion) =>
@@ -71,7 +125,7 @@ const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {
   }
 
   return (
-    <HeaderContainer>
+    <HeaderContainer expanded={expanded}>
       <div
         style={{
           display: 'flex',
@@ -81,7 +135,7 @@ const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {
       >
         <HeaderH1>Dr. Lopez Lugo</HeaderH1>
       </div>
-      <HeaderDivTwo>
+      <HeaderDivTwo expanded={expanded}>
         <Link style={{ textDecoration: 'none' }} to="/">
           <HeaderP
             style={
@@ -113,15 +167,20 @@ const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {
           </HeaderP>
         </Link>
       </HeaderDivTwo>
-      <Link
-        style={{
-          textDecoration: 'none'
-        }}
-        onClick={() => cambiarSeccion('cita')}
-        to="/Cita"
-      >
-        <Boton primaty="false" titulo="Agenda tu cita" />
-      </Link>
+
+      <HeaderTreeDiv expanded={expanded}>
+        <Link
+          style={{
+            textDecoration: 'none'
+          }}
+          onClick={() => cambiarSeccion('cita')}
+          to="/Cita"
+        >
+          <Boton primaty="false" titulo="Agenda tu cita" />
+        </Link>
+      </HeaderTreeDiv>
+
+      <Toggle onClick={toggleHeight}></Toggle>
     </HeaderContainer>
   )
 }

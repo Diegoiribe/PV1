@@ -17,6 +17,10 @@ const HeaderBoton = styled.button`
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+  @media (max-width: 1024px) {
+    font-size: 5vw;
+    padding: 2vw 2.5vw;
+  }
 `
 
 const Boton = (props) => {
@@ -39,14 +43,16 @@ const BotonContactoDiv = styled.button`
   border-radius: 20px;
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
+  font-size: 0.8vw;
+  @media (max-width: 1024px) {
+    font-size: 5vw;
+    padding: 2vw 2.5vw;
+  }
 `
 
 const BotonContacto = (props) => {
   return (
-    <BotonContactoDiv
-      type="submit"
-      style={{ fontSize: '.8vw', width: props.width }}
-    >
+    <BotonContactoDiv type="submit" style={{ width: props.width }}>
       {props.titulo}
     </BotonContactoDiv>
   )
@@ -60,14 +66,15 @@ const BotonCardContactoDiv = styled.button`
   border-radius: 20px;
   border: 1.25px solid ${colorSecundario};
   cursor: pointer;
+  font-size: 0.8vw;
+  @media (max-width: 1024px) {
+    font-size: 5vw;
+    padding: 2vw 2.5vw;
+  }
 `
 
 const BotonCardContacto = (props) => {
-  return (
-    <BotonCardContactoDiv style={{ fontSize: '.8vw' }}>
-      {props.titulo}
-    </BotonCardContactoDiv>
-  )
+  return <BotonCardContactoDiv>{props.titulo}</BotonCardContactoDiv>
 }
 
 const BotonCardCitaDiv = styled.button`
@@ -78,14 +85,15 @@ const BotonCardCitaDiv = styled.button`
   border-radius: 20px;
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
+  font-size: 0.8vw;
+  @media (max-width: 1024px) {
+    font-size: 5vw;
+    padding: 2vw 2.5vw;
+  }
 `
 
 const BotonCardCita = (props) => {
-  return (
-    <BotonCardCitaDiv style={{ fontSize: '.8vw' }}>
-      {props.titulo}
-    </BotonCardCitaDiv>
-  )
+  return <BotonCardCitaDiv>{props.titulo}</BotonCardCitaDiv>
 }
 
 const BotonLoginDiv = styled.button`
@@ -98,12 +106,15 @@ const BotonLoginDiv = styled.button`
   border-radius: 20px;
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
+  font-size: 0.8vw;
+  @media (max-width: 1024px) {
+    font-size: 5vw;
+    padding: 2vw 2.5vw;
+  }
 `
 
 const BotonLogin = (props) => {
-  return (
-    <BotonLoginDiv style={{ fontSize: '.8vw' }}>{props.titulo}</BotonLoginDiv>
-  )
+  return <BotonLoginDiv>{props.titulo}</BotonLoginDiv>
 }
 
 const BotonBodyDiv = styled.button`
@@ -116,12 +127,15 @@ const BotonBodyDiv = styled.button`
   border-radius: 5px;
   border: 1.25px solid ${colorFuerte};
   cursor: pointer;
+  font-size: 1.5vw;
+  @media (max-width: 1024px) {
+    font-size: 5vw;
+    padding: 2vw 2.5vw;
+  }
 `
 
 const BotonBody = (props) => {
-  return (
-    <BotonBodyDiv style={{ fontSize: '1.5vw' }}>{props.titulo}</BotonBodyDiv>
-  )
+  return <BotonBodyDiv>{props.titulo}</BotonBodyDiv>
 }
 
 export {

@@ -75,17 +75,25 @@ const BodyCardSix = styled.div`
 `
 
 const Body = () => {
+  const styles = {
+    fontSize: '3.5rem',
+    color: colorSecundario,
+    width: '43%'
+  }
+
+  // Aplicar estilos condicionales en función del ancho de la pantalla
+  if (window.innerWidth <= 768) {
+    styles.width = '100%'
+    styles.fontSize = '3rem'
+  }
+
   return (
     <BodyContainer>
       {/* <BodyCardOne></BodyCardOne>
       <BodyCardTwo></BodyCardTwo> */}
       {/* <BodyCardThree></BodyCardThree> */}
       <BodyCardFour>
-        <h1
-          style={{ fontSize: '3.5rem', color: colorSecundario, width: '43%' }}
-        >
-          Dr. Omar Lopez Lugo
-        </h1>
+        <h1 style={styles}>Dr. Omar Lopez Lugo</h1>
         <Link to="/Cita">
           <BotonBody titulo="Haz tu cita" />
         </Link>
