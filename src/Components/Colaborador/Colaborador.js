@@ -10,6 +10,11 @@ const ColaboradorDiv = styled.div`
   height: 32%;
   border-radius: 5px;
   border: 2px solid;
+  @media (max-width: 980px) {
+    width: 80%;
+    height: 32%;
+    margin: 1% 0;
+  }
 `
 
 const Colaborador = (props) => {

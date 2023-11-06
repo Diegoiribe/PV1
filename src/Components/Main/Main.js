@@ -19,6 +19,18 @@ const MainDivOne = styled.div`
   background: ${colorPrimario};
   margin-top: 0.5rem;
 `
+
+const H2MAinOne = styled.h2`
+  max-width: 30%;
+  text-align: center;
+  color: ${colorSecundario};
+  font-size: 2.5vw;
+  @media (max-width: 980px) {
+    max-width: 55%;
+    font-size: 4.5vw;
+  }
+`
+
 const MainDivTwo = styled.div`
   grid-column: 2/3;
   grid-row: 2/4;
@@ -27,6 +39,13 @@ const MainDivTwo = styled.div`
   background-size: cover;
   border-radius: 10px;
   margin: 1rem;
+  @media (max-width: 980px) {
+    background: url(https://cdn-3.expansion.mx/dims4/default/c2244a0/2147483647/strip/true/crop/540x720+0+0/resize/1600x2133!/format/webp/quality/60/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fphotos%2F2012%2F10%2F23%2F32417_20131023043315-1382563995-U000.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem 0 10rem;
+  }
 `
 
 const MainDivThree = styled.div`
@@ -57,16 +76,9 @@ const Main = () => {
   return (
     <MainContainer>
       <MainDivOne>
-        <h2
-          style={{
-            maxWidth: '30%',
-            textAlign: 'center',
-            color: colorSecundario,
-            fontSize: '2.5vw'
-          }}
-        >
+        <H2MAinOne>
           Transformando belleza y restaurando confianza, con orgullo
-        </h2>
+        </H2MAinOne>
       </MainDivOne>
       <MainDivTwo></MainDivTwo>
       <MainDivThree>

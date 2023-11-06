@@ -3,6 +3,22 @@ import styled from 'styled-components'
 import Colaborador from '../Colaborador/Colaborador'
 import { colorPrimario, colorSecundario, fondoPrimario } from '../UI/Variables'
 
+const ColaboradoresDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+  margin: 0.5rem 10%;
+  flex-wrap: wrap;
+  @media (max-width: 980px) {
+    height: 200vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+`
+
 const Equipo = (props) => {
   const { colaboradores } = props
   return (
@@ -19,22 +35,11 @@ const Equipo = (props) => {
       >
         <h1 style={{ color: colorPrimario }}>Equipo</h1>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          width: '80%',
-          height: '100vh',
-          margin: '0.5rem 10%',
-          flexWrap: 'wrap'
-        }}
-      >
+      <ColaboradoresDiv>
         {colaboradores.map((colaborador, index) => {
           return <Colaborador datos={colaborador} key={index} />
         })}
-      </div>
+      </ColaboradoresDiv>
     </div>
   )
 }
