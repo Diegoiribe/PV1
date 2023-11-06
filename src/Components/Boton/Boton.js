@@ -27,12 +27,24 @@ const Boton = (props) => {
   return <HeaderBoton primaty>{props.titulo}</HeaderBoton>
 }
 
+const FooterBoton = styled.button`
+  font-weight: bolder;
+  padding: 0.8vw 1.25vw;
+  background: ${(props) => (props.primaty ? colorFuerte : colorSecundario)};
+  font-size: 1.2vw;
+  color: ${(props) => (props.primaty ? colorSecundario : colorFuerte)};
+  border-radius: 5px;
+  border: 1.25px solid ${colorPrimario};
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+  @media (max-width: 980px) {
+    font-size: 2.5vw;
+    padding: 2vw 2.5vw;
+  }
+`
+
 const BotonFooter = (props) => {
-  return (
-    <HeaderBoton style={{ padding: '0.5vw 1vw', fontSize: '1vw' }}>
-      {props.titulo}
-    </HeaderBoton>
-  )
+  return <FooterBoton>{props.titulo}</FooterBoton>
 }
 
 const BotonContactoDiv = styled.button`

@@ -18,6 +18,9 @@ const FooterDivOne = styled.div`
   width: 100%;
   background: ${colorPrimario};
   padding: 1.5rem 11%;
+  @media (max-width: 980px) {
+    flex-direction: column;
+  }
 `
 const FooterDivTwo = styled.div`
   display: flex;
@@ -34,6 +37,9 @@ const FooterP = styled.p`
   font-weight: bolder;
   color: white;
   margin: 0.5rem 0;
+  @media (max-width: 980px) {
+    font-size: 1.5vw;
+  }
 `
 
 const Footer = () => {
@@ -49,7 +55,7 @@ const Footer = () => {
           <FooterP>Acerca</FooterP>
           <FooterP>Consulta</FooterP>
         </div>
-        <div>
+        <div style={{ width: '100%' }}>
           <Formulario />
         </div>
       </FooterDivOne>

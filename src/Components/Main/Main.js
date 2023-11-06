@@ -40,11 +40,11 @@ const MainDivTwo = styled.div`
   border-radius: 10px;
   margin: 1rem;
   @media (max-width: 980px) {
+    grid-row: 2/3;
     background: url(https://cdn-3.expansion.mx/dims4/default/c2244a0/2147483647/strip/true/crop/540x720+0+0/resize/1600x2133!/format/webp/quality/60/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fphotos%2F2012%2F10%2F23%2F32417_20131023043315-1382563995-U000.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 1rem 0 10rem;
   }
 `
 

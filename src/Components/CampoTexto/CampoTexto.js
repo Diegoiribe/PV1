@@ -7,6 +7,9 @@ const CampoTextoDiv = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   width: 40vw;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
 `
 
 const CampoTextoInput = styled.input`
