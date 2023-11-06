@@ -72,6 +72,35 @@ const MainDivFour = styled.div`
   }
 `
 
+const P = styled.p`
+  color: ${colorPrimario};
+  margin: 0.5rem;
+  font-size: 1.1vw;
+  font-weight: 700;
+  @media (max-width: 980px) {
+    font-size: 2.48vw;
+    margin: 0.3rem;
+  }
+`
+const H2 = styled.h2`
+  color: ${colorPrimario};
+  font-size: 2vw;
+  text-align: center;
+  @media (max-width: 980px) {
+    font-size: 4vw;
+  }
+`
+
+const H2P = styled.p`
+  color: ${colorPrimario};
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5vw;
+  @media (max-width: 980px) {
+    font-size: 2vw;
+  }
+`
+
 const Main = () => {
   return (
     <MainContainer>
@@ -82,125 +111,44 @@ const Main = () => {
       </MainDivOne>
       <MainDivTwo></MainDivTwo>
       <MainDivThree>
-        <p
-          style={{
-            color: colorPrimario,
-            margin: '0 0.5rem .5rem',
-            fontSize: '1.1vw'
-          }}
-        >
+        <P>
           Egresado, en 2006, como Médico, por la Facultad de Medicina de la
           Universidad Autónoma de Baja California (UABC) Campus Mexicali.{' '}
-        </p>
-        <p
-          style={{
-            color: colorPrimario,
-            margin: '.5rem',
-            fontSize: '1.1vw'
-          }}
-        >
+        </P>
+        <P>
           Especialista en Cirugía General por el Hospital Universitario ¨Dr.
           José Eleuterio González¨ de la Universidad Autónoma de Nuevo León
           (UANL) en 2013.
-        </p>
-        <p
-          style={{
-            color: colorPrimario,
-            margin: '.5rem',
-            fontSize: '1.1vw'
-          }}
-        >
+        </P>
+        <P>
           Subespecialista en Cirugía Plástica y Reconstructiva por el Hospital
           Universitario ¨Dr. José Eleuterio González¨ de la Universidad Autónoma
           de Nuevo León (UANL) en 2016.
-        </p>
-        <p
-          style={{
-            color: colorPrimario,
-            margin: '.5rem',
-            fontSize: '1.1vw'
-          }}
-        >
+        </P>
+        <P>
           Es miembro de Asociación Mexicana de Cirugía Plástica, Estética y
           Reconstructiva (AMCPER) y cuenta con la Certificación No. 1895 del
           Consejo Mexicano de Cirugía Plástica, Estética y Reconstructiva
           (CMCPER).
-        </p>
-        <p
-          style={{
-            color: colorPrimario,
-            margin: '.5rem .5rem 0',
-            fontSize: '1.1vw'
-          }}
-        >
+        </P>
+        <P>
           Es autor de artículos incluidos en revistas especializadas y obras
           colectivas, así como conferencista en diversos eventos académicos y
           congresos.
-        </p>
+        </P>
       </MainDivThree>
       <MainDivFour>
         <div>
-          <h2
-            style={{
-              color: colorPrimario,
-              fontSize: '2vw',
-              textAlign: 'center'
-            }}
-          >
-            + 11
-          </h2>
-          <p
-            style={{
-              color: colorPrimario,
-              fontWeight: 700,
-              textAlign: 'center',
-              fontSize: '1.5vw'
-            }}
-          >
-            Años de experiencia
-          </p>
+          <H2>+ 11</H2>
+          <H2P>Años de experiencia</H2P>
         </div>
         <div>
-          <h2
-            style={{
-              color: colorPrimario,
-              fontSize: '2vw',
-              textAlign: 'center'
-            }}
-          >
-            + 100
-          </h2>
-          <p
-            style={{
-              color: colorPrimario,
-              fontWeight: 700,
-              textAlign: 'center',
-              fontSize: '1.5vw'
-            }}
-          >
-            Cirugias plasticas realizadas
-          </p>
+          <H2>+ 100</H2>
+          <H2P>Cirugias plasticas realizadas</H2P>
         </div>
         <div>
-          <h2
-            style={{
-              color: colorPrimario,
-              fontSize: '2vw',
-              textAlign: 'center'
-            }}
-          >
-            + 500
-          </h2>
-          <p
-            style={{
-              color: colorPrimario,
-              fontWeight: 700,
-              textAlign: 'center',
-              fontSize: '1.5vw'
-            }}
-          >
-            Pacientes satisfechos
-          </p>
+          <H2>+ 500</H2>
+          <H2P>Pacientes satisfechos</H2P>
         </div>
       </MainDivFour>
     </MainContainer>

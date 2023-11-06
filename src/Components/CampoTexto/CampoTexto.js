@@ -22,6 +22,9 @@ const CampoTextoInput = styled.input`
   &:focus {
     outline: none;
   }
+  @media (max-width: 980px) {
+    font-size: 3vw;
+  }
 `
 
 const CampoTexto = (props) => {

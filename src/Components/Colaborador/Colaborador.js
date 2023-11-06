@@ -16,6 +16,20 @@ const ColaboradorDiv = styled.div`
     margin: 1% 0;
   }
 `
+const H1 = styled.h1`
+  color: ${colorPrimario};
+  font-size: 1.4vw;
+  @media (max-width: 980px) {
+    font-size: 3vw;
+  }
+`
+const H2 = styled.h2`
+  color: ${colorPrimario};
+  font-size: 1.3vw;
+  @media (max-width: 980px) {
+    font-size: 2.7vw;
+  }
+`
 
 const Colaborador = (props) => {
   const { nombre, puesto, foto, fondoPrimario } = props.datos
@@ -47,8 +61,8 @@ const Colaborador = (props) => {
           textAlign: 'center'
         }}
       >
-        <h1 style={{ color: colorPrimario, fontSize: '1.4vw' }}>{nombre}</h1>
-        <h2 style={{ color: colorPrimario, fontSize: '1.3vw' }}>{puesto}</h2>
+        <H1>{nombre}</H1>
+        <H2>{puesto}</H2>
       </div>
     </ColaboradorDiv>
   )

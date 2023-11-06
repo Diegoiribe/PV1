@@ -38,12 +38,20 @@ const FooterP = styled.p`
   color: white;
   margin: 0.5rem 0;
   @media (max-width: 980px) {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 `
 const FooterForm = styled.div`
   @media (max-width: 980px) {
     width: 100%;
+  }
+`
+
+const P = styled.p`
+  color: ${colorPrimario};
+  font-size: 1.1vw;
+  @media (max-width: 980px) {
+    font-size: 2.5vw;
   }
 `
 
@@ -65,9 +73,7 @@ const Footer = () => {
         </FooterForm>
       </FooterDivOne>
       <FooterDivTwo>
-        <p style={{ fontSize: '1vw' }}>
-          Desarrollado por Diego Iribe Carrazco - 2023
-        </p>
+        <P>Desarrollado por Diego Iribe Carrazco - 2023</P>
       </FooterDivTwo>
     </FooterDiv>
   )
