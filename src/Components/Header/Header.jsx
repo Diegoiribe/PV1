@@ -32,7 +32,7 @@ const HeaderDivTwo = styled.div`
   border-radius: 4.375rem;
   padding: 0.3rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     background: none;
     display: ${(props) => (props.expanded ? 'flex' : 'none')};
   }
@@ -41,7 +41,7 @@ const HeaderP = styled.p`
   font-weight: bolder;
   font-family: 'Epidemic', sans-serif;
 
-  padding: 0.8rem 1.5rem;
+  padding: 0.3rem 1rem;
   color: ${colorPrimario};
   border-radius: 5px;
   font-size: 1.15rem;
@@ -52,7 +52,7 @@ const HeaderP = styled.p`
 `
 
 const HeaderTreeDiv = styled.div`
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     display: ${(props) => (props.expanded ? 'flex' : 'none')};
   }
 `
@@ -88,7 +88,7 @@ const Toggle = styled.div`
     transition: 0.25s;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     display: flex;
   }
 `
@@ -97,7 +97,7 @@ const HeaderH1 = styled.h1`
   color: ${colorPrimario};
   font-family: 'Epidemic', sans-serif;
   font-size: 3rem;
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 2rem;
   }
 `

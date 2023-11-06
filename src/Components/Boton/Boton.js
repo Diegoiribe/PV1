@@ -17,7 +17,7 @@ const HeaderBoton = styled.button`
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
   }
@@ -44,7 +44,7 @@ const BotonContactoDiv = styled.button`
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
   font-size: 0.8vw;
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
   }
@@ -67,7 +67,7 @@ const BotonCardContactoDiv = styled.button`
   border: 1.25px solid ${colorSecundario};
   cursor: pointer;
   font-size: 0.8vw;
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
   }
@@ -86,7 +86,7 @@ const BotonCardCitaDiv = styled.button`
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
   font-size: 0.8vw;
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
   }
@@ -107,7 +107,7 @@ const BotonLoginDiv = styled.button`
   border: 1.25px solid ${colorPrimario};
   cursor: pointer;
   font-size: 0.8vw;
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
   }
@@ -128,7 +128,7 @@ const BotonBodyDiv = styled.button`
   border: 1.25px solid ${colorFuerte};
   cursor: pointer;
   font-size: 1.5vw;
-  @media (max-width: 1024px) {
+  @media (max-width: 980px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
     width: 100%;
