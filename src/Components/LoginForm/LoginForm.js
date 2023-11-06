@@ -53,9 +53,9 @@ const LoginForm = (props) => {
           minHeight: '40%'
         }}
       >
-        <h3 style={{ color: colorPrimario, fontWeight: '100' }}>
+        <h1 style={{ color: colorPrimario, fontWeight: '100' }}>
           Inicia sesión en tu cuenta
-        </h3>
+        </h1>
         <form onSubmit={handleSubmitForm}>
           <LoginFormLabel htmlFor="email">Correo electrónico</LoginFormLabel>
           <CampoContactoInformacion

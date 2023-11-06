@@ -214,7 +214,7 @@ const Dashboard = ({
               informacionActiva()
             }}
           >
-            <h5>Informacion</h5>
+            <h2>Informacion</h2>
           </CardHeader>
 
           {informacion && (
@@ -232,14 +232,14 @@ const Dashboard = ({
                   citasActiva()
                 }}
               >
-                <h6>Citas</h6>
+                <h3>Citas</h3>
               </SubCardHeader>
               <SubCardHeader
                 onClick={() => {
                   contactoActiva()
                 }}
               >
-                <h6>Contacto</h6>
+                <h3>Contacto</h3>
               </SubCardHeader>
             </div>
           )}
@@ -249,7 +249,7 @@ const Dashboard = ({
               edicionActiva()
             }}
           >
-            <h5>Edicion</h5>
+            <h2>Edicion</h2>
           </CardHeader>
           {edicion && (
             <div
@@ -267,14 +267,14 @@ const Dashboard = ({
                   inicioActiva()
                 }}
               >
-                <h6>Inicio</h6>
+                <h3>Inicio</h3>
               </SubCardHeader>
               <SubCardHeader
                 onClick={() => {
                   servicioActiva()
                 }}
               >
-                <h6>Servicio</h6>
+                <h3>Servicio</h3>
               </SubCardHeader>
 
               <SubCardHeader
@@ -282,7 +282,7 @@ const Dashboard = ({
                   agendarCitaActiva()
                 }}
               >
-                <h6>Agendar Cita</h6>
+                <h3>Agendar Cita</h3>
               </SubCardHeader>
             </div>
           )}
