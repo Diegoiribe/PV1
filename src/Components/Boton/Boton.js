@@ -131,6 +131,7 @@ const BotonBodyDiv = styled.button`
   @media (max-width: 1024px) {
     font-size: 5vw;
     padding: 2vw 2.5vw;
+    width: 100%;
   }
 `
 

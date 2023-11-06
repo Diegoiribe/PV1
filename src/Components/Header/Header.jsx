@@ -97,6 +97,9 @@ const HeaderH1 = styled.h1`
   color: ${colorPrimario};
   font-family: 'Epidemic', sans-serif;
   font-size: 3rem;
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
 `
 
 const Header = ({ seccion, setSeccion, seccionActiva, setSeccionActiva }) => {
