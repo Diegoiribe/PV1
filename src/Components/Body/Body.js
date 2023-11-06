@@ -57,6 +57,7 @@ const BodyCardFour = styled.div`
   padding: 20vh 15vw;
   @media (max-width: 980px) {
     background-position: center right 35%;
+    margin: 1.5rem 0.5rem 0.5rem;
   }
 `
 const BodyCardFive = styled.div`
