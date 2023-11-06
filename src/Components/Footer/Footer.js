@@ -41,6 +41,11 @@ const FooterP = styled.p`
     font-size: 1.5vw;
   }
 `
+const FooterForm = styled.div`
+  @media (max-width: 980px) {
+    width: 100%;
+  }
+`
 
 const Footer = () => {
   return (
@@ -55,9 +60,9 @@ const Footer = () => {
           <FooterP>Acerca</FooterP>
           <FooterP>Consulta</FooterP>
         </div>
-        <div style={{ width: '100%' }}>
+        <FooterForm>
           <Formulario />
-        </div>
+        </FooterForm>
       </FooterDivOne>
       <FooterDivTwo>
         <p style={{ fontSize: '1vw' }}>
