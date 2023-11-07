@@ -63,7 +63,7 @@ const ContainerTextDiv = styled.div`
   justify-content: space-around;
   flex-direction: column;
   @media (max-width: 980px) {
-    min-height: 53vh;
+    min-height: 60vh;
     width: 60vw;
   }
 `
@@ -104,7 +104,7 @@ const CardServices = ({ service, height }) => {
     styled.color = colorPrimario
     styledCard.flexDirection = 'column'
     styledCard.padding = '0 1%'
-    styledCard.height = '78vh'
+    styledCard.height = '85vh'
     styledPhoto.width = '100%'
     styledPhoto.height = '25vh'
     styledPhoto.margin = '1rem 0'
