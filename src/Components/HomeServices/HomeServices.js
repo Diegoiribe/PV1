@@ -9,6 +9,9 @@ const HomeServicesDiv = styled.div`
   justify-content: space-between;
   width: 80%;
   margin: 5% 10% 0 10%;
+  @media (max-width: 980px) {
+    margin: 25% 10% 0 10%;
+  }
 `
 const CardServicesDiv = styled.div`
   display: flex;

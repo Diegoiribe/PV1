@@ -11,8 +11,7 @@ const ColaboradorDiv = styled.div`
   border-radius: 5px;
   border: 2px solid;
   @media (max-width: 980px) {
-    width: 80%;
-    height: 32%;
+    width: 100%;
     margin: 1% 0;
   }
 `
@@ -20,14 +19,14 @@ const H1 = styled.h1`
   color: ${colorPrimario};
   font-size: 1.4vw;
   @media (max-width: 980px) {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 `
 const H2 = styled.h2`
   color: ${colorPrimario};
   font-size: 1.3vw;
   @media (max-width: 980px) {
-    font-size: 2.7vw;
+    font-size: 3vw;
   }
 `
 

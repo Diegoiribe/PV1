@@ -12,13 +12,19 @@ const BAndADiv = styled.div`
   height: 25vh;
 `
 
+const H2 = styled.h2`
+  color: ${colorSecundario};
+  font-size: 3rem;
+  @media (max-width: 980px) {
+    font-size: 2rem;
+  }
+`
+
 const BAndA = () => {
   return (
     <div>
       <BAndADiv>
-        <h2 style={{ color: colorSecundario, fontSize: '3rem' }}>
-          Before and After
-        </h2>
+        <H2>Before and After</H2>
       </BAndADiv>
     </div>
   )

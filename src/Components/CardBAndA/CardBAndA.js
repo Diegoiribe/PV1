@@ -10,6 +10,10 @@ const CardBAndADiv = styled.div`
   margin: 1%;
   height: 45vh;
   width: 48%;
+  @media (max-width: 980px) {
+    width: 98%;
+    height: 35vh;
+  }
 `
 
 const CardImg = styled.div`
@@ -28,14 +32,16 @@ const CardBAndA = (props) => {
         style={{
           backgroundImage: `url(${fotoAntes})`,
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center'
         }}
       ></CardImg>
       <CardImg
         style={{
           backgroundImage: `url(${fotoDespues})`,
           backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center'
         }}
       ></CardImg>
     </CardBAndADiv>

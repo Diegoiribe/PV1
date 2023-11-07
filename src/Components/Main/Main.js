@@ -131,11 +131,6 @@ const Main = () => {
           Consejo Mexicano de Cirugía Plástica, Estética y Reconstructiva
           (CMCPER).
         </P>
-        <P>
-          Es autor de artículos incluidos en revistas especializadas y obras
-          colectivas, así como conferencista en diversos eventos académicos y
-          congresos.
-        </P>
       </MainDivThree>
       <MainDivFour>
         <div>
