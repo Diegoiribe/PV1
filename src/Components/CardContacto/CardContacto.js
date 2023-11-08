@@ -22,6 +22,12 @@ const CardContactoDiv = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 980px) {
+    width: 70%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem 0.5rem;
+  }
 `
 const CardContactoDivTwo = styled.div`
   width: 100%;
@@ -51,6 +57,41 @@ const IconDiv = styled.div`
   border-radius: 50%;
   background: ${fondoSecundario};
 `
+const Div = styled.div`
+  border-bottom: 1px solid ${colorSecundario};
+  padding: 2.5vh 0;
+  @media (max-width: 980px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+`
+const H3 = styled.h3`
+  color: ${colorSecundario};
+  font-size: 2rem;
+  text-align: center;
+  @media (max-width: 980px) {
+    font-size: 1.5rem;
+  }
+`
+
+const H4 = styled.h4`
+  color: ${colorSecundario};
+  font-size: 2rem;
+
+  @media (max-width: 980px) {
+    font-size: 1.25rem;
+  }
+`
+
+const P = styled.p`
+  color: ${colorSecundario};
+  font-size: 1vw;
+  @media (max-width: 980px) {
+    font-size: 0.75rem;
+  }
+`
 
 const CardContacto = ({ setSeccion, setSeccionActiva }) => {
   const cambiarSeccion = (nombre) => {
@@ -65,20 +106,10 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
   }
   return (
     <CardContactoDiv>
-      <div
-        style={{
-          borderBottom: '1px solid',
-          borderColor: fondoPrimario,
-          padding: '2.5vh 0'
-        }}
-      >
-        <h3 style={{ color: colorSecundario, fontSize: '2rem' }}>
-          Agenda con nosotros
-        </h3>
-        <p style={{ color: colorSecundario, fontSize: '1vw' }}>
-          Tenemos a tu disposicion
-        </p>
-      </div>
+      <Div>
+        <H3>Agenda con nosotros</H3>
+        <P>Tenemos a tu disposicion</P>
+      </Div>
       <div>
         <CardContactoDivTwo>
           <IconDiv>
@@ -88,12 +119,8 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
             />
           </IconDiv>
           <CardContactoDivThree>
-            <h4 style={{ color: colorSecundario, fontSize: '2rem' }}>
-              Visitanos
-            </h4>
-            <p style={{ color: colorSecundario, fontSize: '1vw' }}>
-              Montecarlo, Parque Canacintra I, 80054 Culiacán Rosales, Sin
-            </p>
+            <H4>Visitanos</H4>
+            <P>Montecarlo, Parque Canacintra I, 80054 Culiacán Rosales, Sin</P>
           </CardContactoDivThree>
         </CardContactoDivTwo>
         <CardContactoDivTwo>
@@ -104,12 +131,8 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
             />
           </IconDiv>
           <CardContactoDivThree>
-            <h4 style={{ color: colorSecundario, fontSize: '2rem' }}>
-              Escribenos
-            </h4>
-            <p style={{ color: colorSecundario, fontSize: '1vw' }}>
-              Doctor@ejemplo.com
-            </p>
+            <H4>Escribenos</H4>
+            <P>Doctor@ejemplo.com</P>
           </CardContactoDivThree>
         </CardContactoDivTwo>
         <CardContactoDivTwo>
@@ -120,12 +143,8 @@ const CardContacto = ({ setSeccion, setSeccionActiva }) => {
             />
           </IconDiv>
           <CardContactoDivThree>
-            <h4 style={{ color: colorSecundario, fontSize: '2rem' }}>
-              Llamanos
-            </h4>
-            <p style={{ color: colorSecundario, fontSize: '1vw' }}>
-              (+52) xxx-xxxx-xx
-            </p>
+            <H4>Llamanos</H4>
+            <P>(+52) xxx-xxxx-xx</P>
           </CardContactoDivThree>
         </CardContactoDivTwo>
       </div>

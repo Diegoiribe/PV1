@@ -13,6 +13,11 @@ const InputContacto = styled.input`
   &:focus {
     outline: none;
   }
+  @media (max-width: 980px) {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    min-width: 98%;
+  }
 `
 
 const CampoContacto = (props) => {
@@ -47,6 +52,10 @@ const TextArea = styled.textarea`
   font-size: 1vw;
   &:focus {
     outline: none;
+  }
+  @media (max-width: 980px) {
+    font-size: 0.75rem;
+    padding: 0.5rem;
   }
 `
 

@@ -57,8 +57,9 @@ const BotonContactoDiv = styled.button`
   cursor: pointer;
   font-size: 0.8vw;
   @media (max-width: 980px) {
-    font-size: 5vw;
+    font-size: 3vw;
     padding: 2vw 2.5vw;
+    width: 30%;
   }
 `
 
@@ -80,7 +81,7 @@ const BotonCardContactoDiv = styled.button`
   cursor: pointer;
   font-size: 0.8vw;
   @media (max-width: 980px) {
-    font-size: 5vw;
+    font-size: 3vw;
     padding: 2vw 2.5vw;
   }
 `

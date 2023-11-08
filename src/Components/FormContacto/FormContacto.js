@@ -13,6 +13,10 @@ const FormContactoDiv = styled.form`
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  @media (max-width: 980px) {
+    height: 100%;
+    width: 70%;
+  }
 `
 
 const TextContactoDiv = styled.div`
@@ -29,6 +33,30 @@ const CampoContactoDiv = styled.div`
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
+`
+const H3 = styled.h3`
+  color: ${colorFuerte};
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  @media (max-width: 980px) {
+    font-size: 1rem;
+  }
+`
+const H1 = styled.h1`
+  color: ${colorFuerte};
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  @media (max-width: 980px) {
+    font-size: 1.15rem;
+  }
+`
+
+const P = styled.p`
+  color: ${colorPrimario};
+  font-size: 1vw;
+  @media (max-width: 980px) {
+    font-size: 0.75rem;
+  }
 `
 
 const FormContacto = (props) => {
@@ -57,19 +85,13 @@ const FormContacto = (props) => {
     <>
       <FormContactoDiv onSubmit={handleSubmitForm}>
         <TextContactoDiv>
-          <h3 style={{ color: colorFuerte, fontSize: '2rem' }}>
-            Agenda tu Servicio Con Nosotros
-          </h3>
-          <p style={{ color: colorPrimario, fontSize: '1vw' }}>
-            Te contactaremos lo mas pronto posible
-          </p>
+          <H1>Agenda tu Servicio Con Nosotros</H1>
+          <P>Te contactaremos lo mas pronto posible</P>
         </TextContactoDiv>
 
         <CampoContactoDiv>
           <div>
-            <h3 style={{ color: colorFuerte, margin: '.5rem 0' }}>
-              Informacion de Contacto
-            </h3>
+            <H3>Informacion de Contacto</H3>
           </div>
           <CampoContactoDiv>
             <CampoContacto
@@ -93,7 +115,7 @@ const FormContacto = (props) => {
           </CampoContactoDiv>
         </CampoContactoDiv>
         <div style={{ width: '100%' }}>
-          <h3 style={{ color: colorFuerte, margin: '.5rem 0' }}>Mensaje</h3>
+          <H3>Mensaje</H3>
           <TextAreaContacto
             titulo=""
             placeholder="Ingresa un mensaje"

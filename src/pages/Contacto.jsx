@@ -13,6 +13,11 @@ const ContactoDiv = styled.div`
   align-items: center;
   margin: 0 10%;
   flex-direction: row;
+  @media (max-width: 980px) {
+    flex-direction: column;
+    height: auto;
+    margin: 0 0;
+  }
 `
 
 const ContactoEtiqueta = styled.div`
