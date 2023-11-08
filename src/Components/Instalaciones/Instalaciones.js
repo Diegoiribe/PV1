@@ -26,6 +26,7 @@ const TextDiv = styled.div`
   @media (max-width: 980px) {
     max-width: 100%;
     align-items: center;
+    margin: 0 0 1.5rem 0;
   }
 `
 
