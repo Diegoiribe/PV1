@@ -14,6 +14,19 @@ const CitaDoctorLinkDiv = styled.div`
   margin: 7.5% 10% 0 10%;
   width: 80%;
   flex-direction: column;
+  @media (max-width: 980px) {
+    margin: 30% 5% 0;
+    width: 90%;
+    align-items: center;
+  }
+`
+const H1 = styled.h1`
+  color: ${colorPrimario};
+  font-size: 2rem;
+  margin: 0 10%;
+  @media (max-width: 980px) {
+    margin: 0 10% 3rem;
+  }
 `
 
 const CitaDoctorLink = ({ citaDoctor, citaservice }) => {
@@ -35,9 +48,7 @@ const CitaDoctorLink = ({ citaDoctor, citaservice }) => {
       }}
     >
       <CitaDoctorLinkDiv>
-        <h1 style={{ margin: '0 10%', color: colorPrimario }}>
-          Escoger Doctor
-        </h1>
+        <H1>Escoger Doctor</H1>
         <div style={{ width: '100%' }}>
           {citaServiceItem && (
             <CitaDoctorCard

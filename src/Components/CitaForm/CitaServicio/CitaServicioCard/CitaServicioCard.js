@@ -20,6 +20,13 @@ const CitaServicioDiv = styled.div`
   border-bottom: 1px solid ${fondoPrimario};
   height: 10vh;
 `
+const H1 = styled.h1`
+  color: ${colorPrimario};
+  font-size: 2rem;
+  @media (max-width: 980px) {
+    font-size: 1.25rem;
+  }
+`
 
 const CitaServicioCard = ({ citaservice }) => {
   return (
@@ -34,7 +41,7 @@ const CitaServicioCard = ({ citaservice }) => {
         }}
         to={`/Cita/${citaservice.name}`}
       >
-        <h1 style={{ color: colorPrimario }}>{citaservice.name}</h1>
+        <H1>{citaservice.name}</H1>
         <ArrowForwardIosIcon
           fontSize="small"
           style={{ color: colorPrimario }}

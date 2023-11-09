@@ -10,6 +10,28 @@ const CitaInformacionFormLabel = styled.label`
   margin: 5% 1%;
   font-size: 1.5vw;
   color: ${colorPrimario};
+  @media (max-width: 980px) {
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+`
+const DivCont = styled.div`
+  width: 50%;
+  height: 100%;
+  @media (max-width: 980px) {
+    width: 100%;
+    height: 150vh;
+  }
+`
+
+const DivBtn = styled.div`
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  @media (max-width: 980px) {
+    justify-content: center;
+  }
 `
 
 const CitaInformacionForm = (props) => {
@@ -75,9 +97,9 @@ const CitaInformacionForm = (props) => {
   }
 
   return (
-    <>
+    <DivCont>
       <form
-        style={{ height: '100%', width: '50%' }}
+        style={{ height: '100%', width: '100%' }}
         onSubmit={handleSubmitForm}
       >
         <div
@@ -113,9 +135,7 @@ const CitaInformacionForm = (props) => {
             setValor={setEmail}
           />
           <div style={{ width: '100%', margin: '2.5% 1%' }}>
-            <CitaInformacionFormLabel>
-              Informacion de contacto
-            </CitaInformacionFormLabel>
+            <CitaInformacionFormLabel>Direccion</CitaInformacionFormLabel>
           </div>
           <CampoContactoInformacion
             width="99%"
@@ -143,9 +163,7 @@ const CitaInformacionForm = (props) => {
             setValor={setCodigoPostal}
           />
           <div style={{ width: '100%', margin: '2.5% 1%' }}>
-            <CitaInformacionFormLabel>
-              Informacion de contacto
-            </CitaInformacionFormLabel>
+            <CitaInformacionFormLabel>Mensaje</CitaInformacionFormLabel>
           </div>
           <CampoContactoInformacion
             width="99%"
@@ -154,18 +172,11 @@ const CitaInformacionForm = (props) => {
             setValor={setMensaje}
           />
         </div>
-        <div
-          style={{
-            width: '100%',
-            height: '10%',
-            display: 'flex',
-            alignItems: 'center'
-          }}
-        >
+        <DivBtn>
           <BotonContacto color={colorSecundario} titulo="Enviar" />
-        </div>
+        </DivBtn>
       </form>
-    </>
+    </DivCont>
   )
 }
 

@@ -22,6 +22,33 @@ const CitaFechaLInkDiv = styled.div`
   margin: 7.5% 10% 5% 10%;
   width: 80%;
   max-height: 75vh;
+  @media (max-width: 980px) {
+    margin: 15% 5% 0;
+    width: 90%;
+    flex-direction: column-reverse;
+    max-height: 150vh;
+  }
+`
+
+const H1 = styled.h1`
+  color: ${colorPrimario};
+  font-size: 2rem;
+  @media (max-width: 980px) {
+    font-size: 1.5rem;
+  }
+`
+const DivHora = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-around;
+  height: 70vh;
+  @media (max-width: 980px) {
+    width: 100%;
+    height: 75vh;
+    margin-bottom: 1rem;
+  }
 `
 
 const CitaFechaLink = ({ hora, horaSeleccionada }) => {
@@ -77,16 +104,7 @@ const CitaFechaLink = ({ hora, horaSeleccionada }) => {
               </div>
             </LocalizationProvider>
           </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              width: '40%',
-              justifyContent: 'space-around',
-              height: '70vh'
-            }}
-          >
+          <DivHora>
             <div
               style={{
                 width: '100%',
@@ -95,7 +113,7 @@ const CitaFechaLink = ({ hora, horaSeleccionada }) => {
                 alignItems: 'center'
               }}
             >
-              <h1 style={{ color: colorPrimario }}>Elige una hora</h1>
+              <H1>Elige una hora</H1>
             </div>
             <div
               style={{
@@ -114,7 +132,7 @@ const CitaFechaLink = ({ hora, horaSeleccionada }) => {
                 />
               ))}
             </div>
-          </div>
+          </DivHora>
         </CitaFechaLInkDiv>
       </form>
       <Footer />

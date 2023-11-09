@@ -95,6 +95,10 @@ const InputContactoInformacion = styled.input`
   &:focus {
     outline: none;
   }
+  @media (max-width: 980px) {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
 `
 
 const CampoContactoInformacion = (props) => {

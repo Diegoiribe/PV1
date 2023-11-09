@@ -22,6 +22,14 @@ const CitaDoctorDiv = styled.div`
   height: 10vh;
 `
 
+const P = styled.p`
+  color: ${colorPrimario};
+  font-size: 1.25vw;
+  @media (max-width: 980px) {
+    font-size: 1rem;
+  }
+`
+
 const CitaDoctor = ({ citaDoctor, citaservice }) => {
   return (
     <CitaDoctorDiv>
@@ -35,9 +43,7 @@ const CitaDoctor = ({ citaDoctor, citaservice }) => {
         }}
         to={`/Cita/${citaservice.name}/Doctor/${citaDoctor.name}`}
       >
-        <p style={{ fontSize: '1.25vw', color: colorPrimario }}>
-          {citaDoctor.name}
-        </p>
+        <P>{citaDoctor.name}</P>
         <ArrowForwardIosIcon
           fontSize="small"
           style={{ color: colorPrimario }}

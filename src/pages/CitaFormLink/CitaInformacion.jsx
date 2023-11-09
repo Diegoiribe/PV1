@@ -11,6 +11,11 @@ const CitaInformacionDiv = styled.div`
   flex-direction: row;
   width: 80%;
   height: 75vh;
+  @media (max-width: 980px) {
+    margin: 30% 5% 0;
+    width: 90%;
+    flex-direction: column-reverse;
+  }
 `
 const CitaInformacionImg = styled.div`
   min-width: 40%;
@@ -19,6 +24,10 @@ const CitaInformacionImg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
+  @media (max-width: 980px) {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
 `
 
 const CitaInformacion = ({ registrarMensajeCita }) => {

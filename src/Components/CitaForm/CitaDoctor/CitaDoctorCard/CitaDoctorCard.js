@@ -22,6 +22,13 @@ const CitaDoctorDiv = styled.div`
   border-bottom: 1px solid ${fondoPrimario};
   height: 10vh;
 `
+const H1 = styled.h1`
+  color: ${colorSecundario};
+  font-size: 2rem;
+  @media (max-width: 980px) {
+    font-size: 1.25rem;
+  }
+`
 
 const CitaDoctorCard = ({ citaservice }) => {
   return (
@@ -35,7 +42,7 @@ const CitaDoctorCard = ({ citaservice }) => {
           textDecoration: 'none'
         }}
       >
-        <h1 style={{ color: colorSecundario }}>{citaservice.name}</h1>
+        <H1 style={{ color: colorSecundario }}>{citaservice.name}</H1>
       </div>
     </CitaDoctorDiv>
   )

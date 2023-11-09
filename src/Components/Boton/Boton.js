@@ -100,7 +100,8 @@ const BotonCardCitaDiv = styled.button`
   cursor: pointer;
   font-size: 0.8vw;
   @media (max-width: 980px) {
-    font-size: 5vw;
+    width: 100%;
+    font-size: 3.5vw;
     padding: 2vw 2.5vw;
   }
 `

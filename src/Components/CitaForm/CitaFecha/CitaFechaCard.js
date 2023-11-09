@@ -17,6 +17,25 @@ const CitaFechaCardDiv = styled.div`
   &:hover {
     cursor: pointer;
   }
+  @media (max-width: 980px) {
+    width: 8rem;
+  }
+`
+
+const PActive = styled.p`
+  color: ${colorSecundario};
+  font-size: 1vw;
+  @media (max-width: 980px) {
+    font-size: 1rem;
+  }
+`
+
+const P = styled.p`
+  color: ${colorPrimario};
+  font-size: 1vw;
+  @media (max-width: 980px) {
+    font-size: 1rem;
+  }
 `
 
 const CitaFechaCard = ({ hora, horaSeleccionada }) => {
@@ -65,7 +84,7 @@ const CitaFechaCard = ({ hora, horaSeleccionada }) => {
             }}
             to={`${cleanedURL}/Hora/${selectedId}`}
           >
-            <p style={{ fontSize: '1vw', color: colorSecundario }}>{tiempo}</p>
+            <PActive>{tiempo}</PActive>
           </Link>
         </CitaFechaCardDiv>
       ) : (
@@ -90,7 +109,7 @@ const CitaFechaCard = ({ hora, horaSeleccionada }) => {
             }}
             to={`${cleanedURL}/Hora/${tiempo}`}
           >
-            <p style={{ fontSize: '1vw', color: colorPrimario }}>{tiempo}</p>
+            <P>{tiempo}</P>
           </Link>
         </CitaFechaCardDiv>
       )}
